@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nível 2 - Guia de UX</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/niveis.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="page-interna">
+
+    <div class="layout-wrapper">
+        
+        <aside class="sidebar">
+            <a href="../index.html" class="nav-home">Home</a>
+            
+            <nav class="nav-links-vertical">
+                <a href="../diretrizes/introducao.html">Diretrizes</a>
+                
+                <div class="nav-group">
+                    <a href="../heuristicas/introducao.html">Heurísticas</a>
+                </div>
+
+                <div class="nav-group">
+                    <a href="introducao.html" class="active-green">Níveis do TEA</a>
+                    <div class="sub-nav">
+                        <a href="nivel-1.html">Nível 1 (Leve)</a>
+                        <!-- Deixando o Nível 2 em destaque na sidebar para indicar a página atual -->
+                        <a href="nivel-2.html" style="color: var(--green-darkest); font-weight: bold;">Nível 2 (Moderado)</a>
+                        <a href="nivel-3.html">Nível 3 (Severo)</a>
+                        <a href="transversais.html">Transversais</a>
+                    </div>
+                </div>
+                
+                <a href="#">Artefatos</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="content-container">
+                
+                <!-- Título Principal -->
+                <div class="title-box-green bg-green text-green-dark">
+                    <h1>Nível 2 - “Exigindo Apoio Substancial” (Espectro moderado)</h1>
+                </div>
+
+                <article class="heuristic-detail">
+                    
+                    <!-- Texto descritivo centralizado e em negrito -->
+                    <p class="nivel-desc" style="text-align: center; font-weight: 700; max-width: 750px; margin: 0 auto 40px auto;">
+                        Déficits comunicacionais mais evidentes; linguagem funcional simples; inflexibilidade comportamental que prejudica a adaptação a mudanças; pode necessitar de suporte intensivo em contextos complexos.
+                    </p>
+                    
+                    <!-- Primeira Caixa: Sinais comuns -->
+                    <div class="info-box-green">
+                        <h3>Sinais comuns:</h3>
+                        <ul>
+                            <li>Vocabulário limitado ou uso de frases curtas; dificuldades em manter conversas prolongadas.</li>
+                            <li>Resistência a mudanças na interface ou fluxo (transições inesperadas geram angústia).</li>
+                            <li>Maior sensibilidade sensorial (sons, animações, contrastes fortes).</li>
+                            <li>Necessidade de rotinas rigorosas e previsibilidade na navegação.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Segunda Caixa: Recomendações -->
+                    <div class="info-box-green">
+                        <h3>Recomendações de interface:</h3>
+                        <ul>
+                            <li>Forneça modo simplificado como padrão configurável (reduzir opções, apresentar apenas o essencial).</li>
+                            <li>Evite mudanças automáticas de estado; solicite confirmação antes de ações disruptivas.</li>
+                            <li>Implemente controles de estimulação sensorial: desligar sons, reduzir movimento, imagens estáticas.</li>
+                            <li>Use pictogramas + texto. Prefira ícones explícitos e consistentes.</li>
+                            <li>Assegure que as ações críticas tenham rótulos redundantes (texto + ícone + tooltip).</li>
+                            <li>Permita salvar/retomar fluxos exatamente onde pararam (estado persistente).</li>
+                            <li>Forneça suporte multimodal: áudio opcional, leitura em voz, e material ilustrado.</li>
+                        </ul>
+                    </div>
+
+                </article>
+
+                <!-- Navegação -->
+                <div class="nav-arrows">
+                    <a href="nivel-1.html" class="arrow-btn">⬅ Anterior</a>
+                    <a href="nivel-3.html" class="arrow-btn btn-green">Próximo Nível ➡</a> 
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

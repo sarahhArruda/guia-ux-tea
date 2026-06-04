@@ -1,0 +1,142 @@
+/* =========================================
+   Estilos das Heurísticas (Módulo Roxo)
+   ========================================= */
+
+/* Área de Conteúdo */
+.main-content {
+    flex: 1;
+    padding: 60px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.content-container {
+    max-width: 800px;
+    width: 100%;
+    text-align: left;
+}
+
+/* Título Roxo */
+.bg-purple { background-color: var(--purple-light); }
+.text-purple-dark { color: var(--purple-darkest); }
+
+.title-box-purple {
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title-box-purple h1 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* Caixa de Aviso Roxa (igual ao seu slide) */
+.info-box-purple {
+    background-color: var(--purple-light);
+    color: var(--purple-darkest);
+    padding: 30px 40px;
+    border-radius: 40px; /* Bordas mais arredondadas como no slide */
+    margin-top: 40px;
+}
+
+.info-box-purple ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.info-box-purple li {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-weight: 700; /* Texto em negrito como no slide */
+}
+
+.info-box-purple li:last-child {
+    margin-bottom: 0;
+}
+
+/* Ajuste de cor do botão ativo na sidebar para esta seção */
+.sidebar .nav-links-vertical a.active-purple {
+    background-color: var(--purple-light);
+    color: var(--purple-darkest);
+}
+/* =========================================
+   Menu de Heurísticas (Pílulas Roxas)
+   ========================================= */
+.heuristics-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Espaço entre os botões */
+    margin: 40px 0;
+    width: 100%;
+}
+
+.pill-link-purple {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    padding: 15px 25px;
+    border-radius: 50px; /* Deixa as bordas totalmente arredondadas */
+    text-decoration: none; /* Tira o sublinhado padrão de link */
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    background-color: var(--purple-light);
+    color: var(--purple-darkest);
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
+}
+
+.pill-link-purple:hover {
+    transform: scale(1.02); /* Aumenta levemente ao passar o mouse */
+    border-color: var(--purple-darkest);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Detalhes da Heurística */
+.heuristic-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--purple-darkest);
+    margin-bottom: 20px;
+}
+
+.heuristic-desc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-dark);
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.criteria-section h3 {
+    font-size: 18px;
+    color: var(--purple-darkest);
+    margin-bottom: 15px;
+}
+
+.criteria-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.criteria-section li {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: var(--text-dark);
+}
+
+.info-box-purple h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--purple-darkest);
+}
+.sub-nav a:hover {
+    background-color: var(--purple-light);
+    color: var(--purple-darkest);
+}

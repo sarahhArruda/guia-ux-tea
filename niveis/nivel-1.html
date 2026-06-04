@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nível 1 - Guia de UX</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/niveis.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="page-interna">
+
+    <div class="layout-wrapper">
+        
+        <aside class="sidebar">
+            <a href="../index.html" class="nav-home">Home</a>
+            
+            <nav class="nav-links-vertical">
+                <a href="../diretrizes/introducao.html">Diretrizes</a>
+                
+                <div class="nav-group">
+                    <a href="../heuristicas/introducao.html">Heurísticas</a>
+                </div>
+
+                <div class="nav-group">
+                    <a href="introducao.html" class="active-green">Níveis do TEA</a>
+                    <div class="sub-nav">
+                        <!-- Deixando o Nível 1 em destaque na sidebar para indicar a página atual -->
+                        <a href="nivel-1.html" style="color: var(--green-darkest); font-weight: bold;">Nível 1 (Leve)</a>
+                        <a href="nivel-2.html">Nível 2 -(Moderado)</a>
+                        <a href="nivel-3.html">Nível 3 (Severo)</a>
+                        <a href="transversais.html">Transversais</a>
+                    </div>
+                </div>
+                
+                <a href="#">Artefatos</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="content-container">
+                
+                <!-- Título Principal -->
+                <div class="title-box-green bg-green text-green-dark">
+                    <h1>Nível 1 - “Exigindo Apoio” (Espectro leve)</h1>
+                </div>
+
+                <article class="heuristic-detail">
+                    
+                    <!-- Texto descritivo centralizado e em negrito como no protótipo -->
+                    <p class="nivel-desc" style="text-align: center; font-weight: 700; max-width: 750px; margin: 0 auto 40px auto;">
+                        Usuários frequentemente verbais, QI na média ou acima; apresentam dificuldades nas nuances sociais, flexibilidade cognitiva reduzida e organização/planejamento prejudicados. Podem realizar tarefas complexas, mas com fricção social e erros em fluxos não previsíveis.
+                    </p>
+                    
+                    <!-- Primeira Caixa: Limitações -->
+                    <div class="info-box-green">
+                        <h3>Limitações:</h3>
+                        <ul>
+                            <li>Dificuldade em interpretar instruções implícitas (sarcasmo, metáforas).</li>
+                            <li>Problemas para gerenciar múltiplas etapas/etapas não visíveis.</li>
+                            <li>Sensibilidade moderada a sobrecarga de informação (texto longo, múltiplas escolhas).</li>
+                            <li>Preferência por rotinas e previsibilidade.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Segunda Caixa: Recomendações -->
+                    <div class="info-box-green">
+                        <h3>Recomendações de interface:</h3>
+                        <ul>
+                            <li>Use linguagem direta, frases curtas e instruções passo-a-passo.</li>
+                            <li>Divida formulários longos em passos (stepper) com indicação clara do progresso.</li>
+                            <li>Forneça rótulos explícitos e exemplos (placeholder + exemplo de preenchimento).</li>
+                            <li>Feedback imediato e explícito em ações (confirmações visuais/sonoras desativáveis).</li>
+                            <li>Ofereça modos de visualização com informação reduzida (“modo simples”).</li>
+                            <li>Facilite desfazer ações (undo) e recuperação de erros com instruções claras.</li>
+                            <li>Evite microcopy ambígua; prefira instruções = ação.</li>
+                        </ul>
+                    </div>
+
+                </article>
+
+                <!-- Navegação -->
+                <div class="nav-arrows">
+                    <a href="introducao.html" class="arrow-btn">⬅ Voltar</a>
+                    <a href="nivel-2.html" class="arrow-btn btn-green">Próximo Nível ➡</a> 
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

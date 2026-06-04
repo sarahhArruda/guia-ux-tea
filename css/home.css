@@ -1,0 +1,52 @@
+/* Layout exclusivo da tela inicial */
+.home-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.home-container {
+    max-width: 1000px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.home-container header h1 { font-size: 26px; line-height: 1.5; font-weight: 700; }
+
+.grid-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    min-height: 140px;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.card h2 { font-size: 22px; font-weight: 700; line-height: 1.3; }
+
+/* Cores dos botões grandes */
+.card-red { background-color: var(--red-light); color: var(--red-darkest); }
+.card-purple { background-color: var(--purple-light); color: var(--purple-darkest); }
+.card-green { background-color: var(--green-light); color: var(--green-darkest); }
+.card-blue { background-color: var(--blue-light); color: var(--blue-darkest); }
+
+footer p { font-size: 14px; color: var(--text-muted); max-width: 800px; margin: 0 auto; }

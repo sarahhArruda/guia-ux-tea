@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nível 3 - Guia de UX</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/niveis.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="page-interna">
+
+    <div class="layout-wrapper">
+        
+        <aside class="sidebar">
+            <a href="../index.html" class="nav-home">Home</a>
+            
+            <nav class="nav-links-vertical">
+                <a href="../diretrizes/introducao.html">Diretrizes</a>
+                
+                <div class="nav-group">
+                    <a href="../heuristicas/introducao.html">Heurísticas</a>
+                </div>
+
+                <div class="nav-group">
+                    <a href="introducao.html" class="active-green">Níveis do TEA</a>
+                    <div class="sub-nav">
+                        <a href="nivel-1.html">Nível 1 (Leve)</a>
+                        <a href="nivel-2.html">Nível 2 (Moderado)</a>
+                        <!-- Deixando o Nível 3 em destaque na sidebar para indicar a página atual -->
+                        <a href="nivel-3.html" style="color: var(--green-darkest); font-weight: bold;">Nível 3 (Severo)</a>
+                        <a href="transversais.html">Transversais</a>
+                    </div>
+                </div>
+                
+                <a href="#">Artefatos</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="content-container">
+                
+                <!-- Título Principal -->
+                <div class="title-box-green bg-green text-green-dark">
+                    <h1>Nível 3 - “Exigindo Apoio Muito Substancial” (Espectro severo)</h1>
+                </div>
+
+                <article class="heuristic-detail">
+                    
+                    <!-- Texto descritivo centralizado e em negrito como no protótipo -->
+                    <p class="nivel-desc" style="text-align: center; font-weight: 700; max-width: 750px; margin: 0 auto 40px auto;">
+                        Déficits graves na comunicação verbal e não verbal; possível ausência de linguagem funcional; inflexibilidade extrema e alta dependência de suportes físicos ou tecnologia assistiva. Comorbidades (deficiência intelectual, crises, autoagressão) são comuns.
+                    </p>
+                    
+                    <!-- Primeira Caixa: Sinais comuns -->
+                    <div class="info-box-green">
+                        <h3>Sinais comuns:</h3>
+                        <ul>
+                            <li>Ausência de fala ou ecolalia; comunicação por gestos, imagens ou dispositivos assistivos.</li>
+                            <li>Reação intensa a mudanças sensoriais e de rotina; crises/meltdown em situações imprevisíveis.</li>
+                            <li>Necessidade de interfaces muito simples, previsíveis e compatíveis com tecnologias assistivas.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Segunda Caixa: Recomendações -->
+                    <div class="info-box-green">
+                        <h3>Recomendações de interface:</h3>
+                        <ul>
+                            <li>Priorize compatibilidade com dispositivos assistivos (AAC — comunicação alternativa): botões grandes que disparem mensagens predefinidas.</li>
+                            <li>Use layout com grandes alvos (mínimo recomendado: 44–48 px) e alto espaçamento entre elementos.</li>
+                            <li>Implementar telas de “emergência” com ações pré-definidas (ex.: acionar cuidador, instruções de calma).</li>
+                            <li>Evitar estímulos visuais inesperados; manter visual estático por padrão.</li>
+                            <li>Fornecer múltiplas formas de entrada: toque, seleção por scans, integração com dispositivos externos.</li>
+                            <li>Garantir que modos de personalização (contraste, tamanho de fonte) possam ser configurados por terceiros (cuidadores).</li>
+                            <li>Em fluxos críticos, permitir controle por terceiro (cuidador) com permissões claras.</li>
+                        </ul>
+                    </div>
+
+                </article>
+
+                <!-- Navegação -->
+                <div class="nav-arrows">
+                    <a href="nivel-2.html" class="arrow-btn">⬅ Anterior</a>
+                    <a href="transversais.html" class="arrow-btn btn-green">Próximo ➡</a> 
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

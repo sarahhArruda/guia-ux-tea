@@ -1,0 +1,171 @@
+/* Layout da área central para páginas internas */
+.page-interna { display: block; align-items: stretch; }
+
+.main-content {
+    flex: 1;
+    padding: 60px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.content-container {
+    max-width: 800px;
+    width: 100%;
+    text-align: left;
+}
+
+/* Títulos e Textos Base */
+.title-box { padding: 20px; border-radius: 20px; text-align: center; margin-bottom: 40px; }
+.title-box h1 { font-size: 26px; font-weight: 700; }
+
+.text-content p { font-size: 16px; line-height: 1.6; margin-bottom: 25px; color: var(--text-dark); }
+
+/* Caixa de Avisos da Introdução */
+.warning-box { padding: 30px 40px; border-radius: 20px; margin-top: 40px; }
+.warning-box ul { list-style-type: disc; padding-left: 20px; }
+.warning-box li { font-size: 16px; line-height: 1.6; margin-bottom: 15px; color: var(--red-darkest); }
+.warning-box li:last-child { margin-bottom: 0; }
+
+/* Lista de Diretrizes (Pílulas) */
+.guidelines-list { display: flex; flex-direction: column; gap: 50px; }
+.guideline-item { display: flex; flex-direction: column; gap: 15px; }
+
+.pill-title {
+    padding: 15px 30px;
+    border-radius: 50px;
+    display: inline-block;
+    align-self: flex-start;
+    margin-bottom: 10px;
+}
+.pill-title h2 { font-size: 18px; font-weight: 700; margin: 0; }
+
+.guideline-quote {
+    font-style: italic; color: var(--text-dark); font-size: 16px;
+    padding-left: 20px; border-left: 4px solid var(--red-light);
+}
+
+.guideline-implications { background-color: #fafafa; padding: 20px; border-radius: 12px; border: 1px solid #eaeaea; }
+.guideline-implications strong { color: var(--red-darkest); font-size: 16px; display: block; margin-bottom: 10px; }
+.guideline-implications ul { list-style-type: none; }
+.guideline-implications li { font-size: 15px; color: var(--text-dark); margin-bottom: 8px; position: relative; padding-left: 15px; }
+.guideline-implications li::before { content: "•"; color: var(--red-light); position: absolute; left: 0; font-weight: bold; font-size: 18px; }
+
+/* =========================================
+   Estilos do Menu de Diretrizes (Pílulas)
+   ========================================= */
+
+.guidelines-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza as pílulas horizontalmente */
+    gap: 15px; /* Espaço entre as pílulas */
+    margin: 40px 0;
+}
+
+.pill-link {
+    width: 100%;
+    max-width: 600px; /* Limita a largura para ficar elegante */
+    padding: 12px 25px;
+    border-radius: 50px; /* Bordas totalmente arredondadas */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
+}
+
+.pill-link:hover {
+    transform: scale(1.02); /* Aumenta levemente ao passar o mouse */
+    border-color: var(--red-darkest); /* Adiciona uma borda fina no hover */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+/* =========================================
+   Estilos do Accordion de Diretrizes
+   ========================================= */
+
+.guidelines-accordion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 40px 0;
+    width: 100%;
+}
+
+.guideline-item {
+    width: 100%;
+    max-width: 650px;
+}
+
+/* Esconde a setinha preta padrão do navegador */
+.guideline-item summary::-webkit-details-marker {
+    display: none;
+}
+.guideline-item summary {
+    list-style: none; /* Para o Firefox */
+}
+
+/* O botão em formato de pílula */
+.pill-link {
+    display: block;
+    width: 100%;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    border: 1px solid transparent;
+}
+
+.pill-link:hover {
+    background-color: #ff9999; /* Um vermelho ligeiramente mais claro no hover */
+}
+
+/* Quando a pílula está aberta, tira a borda arredondada de baixo para conectar com a caixa */
+details[open] .pill-link {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 1px solid var(--red-light);
+}
+
+/* O conteúdo expandido */
+.accordion-content {
+    background-color: #fff5f5; /* Um vermelho bem clarinho e suave */
+    border: 1px solid var(--red-light);
+    border-top: none; /* Tira a borda de cima para emendar com o título */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 25px 30px;
+    text-align: left;
+}
+
+.accordion-content .quote {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.accordion-content .implications-title {
+    margin-bottom: 10px;
+}
+
+.accordion-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.accordion-content li {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.sidebar .sub-nav a:hover {
+    background-color: var(--red-light);
+    color: var(--red-darkest);
+}

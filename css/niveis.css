@@ -1,0 +1,143 @@
+/* =========================================
+   Estilos dos Níveis do TEA (Módulo Verde)
+   ========================================= */
+
+/* Área de Conteúdo */
+.main-content {
+    flex: 1;
+    padding: 60px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.content-container {
+    max-width: 800px;
+    width: 100%;
+    text-align: left;
+}
+
+/* Título Verde */
+.bg-green { background-color: var(--green-light); }
+.text-green-dark { color: var(--green-darkest); }
+
+.title-box-green {
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title-box-green h1 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* Caixa de Aviso Verde */
+.info-box-green {
+    background-color: var(--green-light);
+    color: var(--green-darkest);
+    padding: 30px 40px;
+    border-radius: 40px;
+    margin-top: 40px;
+}
+
+.info-box-green ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.info-box-green li {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.info-box-green li:last-child {
+    margin-bottom: 0;
+}
+
+/* Ajuste de cor do botão ativo na sidebar para esta seção */
+.sidebar .nav-links-vertical a.active-green {
+    background-color: var(--green-light);
+    color: var(--green-darkest);
+}
+
+/* =========================================
+   Menu de Níveis (Pílulas Verdes)
+   ========================================= */
+.niveis-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 40px 0;
+    width: 100%;
+}
+
+.pill-link-green {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    padding: 15px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    background-color: var(--green-light);
+    color: var(--green-darkest);
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
+}
+
+.pill-link-green:hover {
+    transform: scale(1.02);
+    border-color: var(--green-darkest);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Detalhes do Nível */
+.nivel-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--green-darkest);
+    margin-bottom: 20px;
+}
+
+.nivel-desc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-dark);
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.criteria-section h3 {
+    font-size: 18px;
+    color: var(--green-darkest);
+    margin-bottom: 15px;
+}
+
+.criteria-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.criteria-section li {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: var(--text-dark);
+}
+
+.info-box-green h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--green-darkest);
+}
+.sidebar .sub-nav a:hover {
+    background-color: var(--green-light);
+    color: var(--green-darkest);
+}
